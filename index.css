@@ -124,7 +124,7 @@
     width: 100%;
     min-height: 800px;
 
-    background-image: url(../img/jellyfish_svg.svg);
+    background-image: url(img/jellyfish_svg.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 45% 100%
