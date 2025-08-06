@@ -11,6 +11,12 @@ body {
     color: #2A2A2D;
     font-size: 20px;
     line-height: 150%;
+    min-height: 100vh;
+
+    background-image: url(../img/object.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
 }
 
 .slogan {
@@ -32,17 +38,32 @@ body {
     padding-top: 24px;
 }
 
+.category {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 80px;
+    margin: 40px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 160px;
+    max-width: 300px;
+}
+
 .index {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    padding-top: 40px;
 }
 
 .num {
-    font-family: playfair-display, serif;
+    font-family: Playfair Display, serif;
     font-size: 88px;
     font-style: italic;
+    font-weight: 400;
     letter-spacing: -2%;
     line-height: 100%;
     color: #147af7;
@@ -55,6 +76,13 @@ body {
     letter-spacing: -1%;
     line-height: 150%;
 
+    margin-top: 32px;
     padding-bottom: 8px;
     border-bottom: 2px solid #2A2A2D;
+}
+
+.info {
+    width: 100%;
+    margin-top: 24px;
+    word-break: break-all;
 }
