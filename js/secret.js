@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const imageFolder = '../asset/'; // 실제 경로에 맞게 수정
+  const imageFolder = '../asset/random/'; // 실제 경로에 맞게 수정
   const imageFiles = [
         'img1.jpeg',
         'img2.jpeg',

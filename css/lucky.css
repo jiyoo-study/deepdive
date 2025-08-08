@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'SUITE', sans-serif;
+    color: #111;
+    height: 100vh;
+}
+
+.items {
+    margin: 40px 0 auto 40px;
+    padding-right: 40px;
+    border-right: #00000010 solid 1px;
+    width: 70%;
+}
+
+.title {
+    padding-top: 8px;
+    margin-bottom: 48px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-wrapper .swiper-slide {
+    width: 240px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+}
+
+.itemTitle {
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.itemImage {
+    width: 240px;
+    height: 180px;
+}
+
+.itemDesc {
+    padding: 16px 12px 0 2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #5c5c5c;
+    margin-bottom: 24px;
+}
+
+.itemBtn {
+    padding: 8px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #08CD2C;
+    color: #fff;
+    font-weight: 700;
+}
+
+.receipt {
+    width: auto;
+    padding-left: 40px;
+    margin: 40px auto 0 0 ;
+}
+
+.listGroup {
+    margin-bottom: 48px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 140%;
+    padding-top: 24px;
+    border-top: #08CD2C solid 1px ;
+}
+
+.content {
+    display: flex;
+}
