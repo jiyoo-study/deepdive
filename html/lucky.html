@@ -4,55 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lucky score</title>
 
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/lucky.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/lucky.css">
 </head>
 
 <body>
+
 <div class="content">
+
     <div class="items">
         <div class="title">오늘의 운세 포장하기⭐️</div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+
+                <div class="swiper-slide" data-luck-type="금전운">
                     <div class="itemTitle">금전운</div>
                     <img class="itemImage" src="../asset/lucky/01.jpg" alt="금전운">
-                    <div class="itemDesc">돈이 자꾸만 굴러들어와요. 잡을 수 있으면 잡으세요!</div>
-                    <div class="itemBtn">행운 추가하기</div>
+                    <div class="itemDesc">$돈이 자꾸만 굴러들어와요$ 쓰면 쓸수록 돈이 더 생기는 날이에요!</div>
+                    <button class="itemBtn add-luck-button">행운 추가하기</button>
                 </div>
-                <div class="swiper-slide">
-                    <div class="itemTitle">건강운</div>
-                    <img class="itemImage" src="../asset/lucky/02.jpg" alt="건강운">
-                    <div class="itemDesc">오늘은 비타민 충전 완료! 근육이 속삭입니다, “오늘 좀 쩌는데?”</div>
-                    <div class="itemBtn">행운 추가하기</div>
-                </div>
-                <div class="swiper-slide">
+
+                <div class="swiper-slide" data-luck-type="애정운">
                     <div class="itemTitle">애정운</div>
-                    <img class="itemImage" src="../asset/lucky/03.jpg" alt="애정운">
-                    <div class="itemDesc">오늘 당신은 워킹 하트. 어디를 가든 사랑을 몰고 다닙니다.</div>
-                    <div class="itemBtn">행운 추가하기</div>
+                    <img class="itemImage" src="../asset/lucky/02.jpg" alt="애정운">
+                    <div class="itemDesc">사랑이 우수수 쏟아지는 하루 ❤︎ 마음껏 사랑을 표현하면 좋은 결과만 뒤따라요!</div>
+                    <button class="itemBtn add-luck-button">행운 추가하기</button>
                 </div>
-                <div class="swiper-slide">
-                    <div class="itemTitle">음식운</div>
-                    <img class="itemImage" src="../asset/lucky/04.jpg" alt="음식운">
-                    <div class="itemDesc">오늘은 어떤 음식을 먹어도 성공! 맛있는 음식이 자꾸만 당신에게 찾아옵니다.</div>
-                    <div class="itemBtn">행운 추가하기</div>
+
+                <div class="swiper-slide" data-luck-type="건강운">
+                    <div class="itemTitle">건강운</div>
+                    <img class="itemImage" src="../asset/lucky/03.jpg" alt="건강운">
+                    <div class="itemDesc">몸에서 활력이 솟아요. 몸이 튼튼해지니 마음까지 건강해져서 기운이 넘쳐요!</div>
+                    <button class="itemBtn add-luck-button">행운 추가하기</button>
                 </div>
-                <div class="swiper-slide">
+
+                <div class="swiper-slide" data-luck-type="웃음운">
                     <div class="itemTitle">웃음운</div>
-                    <img class="itemImage" src="../asset/lucky/05.jpg" alt="웃음운">
-                    <div class="itemDesc">무슨 얘기를 해도 상대가 빵 터져요. 웃음사냥꾼 달성!</div>
-                    <div class="itemBtn">행운 추가하기</div>
+                    <img class="itemImage" src="../asset/lucky/04.jpg" alt="웃음운">
+                    <div class="itemDesc">무슨 얘기를 해도 상대가 빵 터져요. 오늘의 웃음사냥꾼은 바로 당신입니다!</div>
+                    <button class="itemBtn add-luck-button">행운 추가하기</button>
                 </div>
-                <div class="swiper-slide">
+
+                <div class="swiper-slide" data-luck-type="음식운">
+                    <div class="itemTitle">음식운</div>
+                    <img class="itemImage" src="../asset/lucky/05.jpg" alt="음식운">
+                    <div class="itemDesc">오늘은 어떤 음식을 먹어도 성공⚡︎⚡︎ 맛있는 음식이 자꾸만 당신에게 찾아옵니다!</div>
+                    <button class="itemBtn add-luck-button">행운 추가하기</button>
+                </div>
+
+                <div class="swiper-slide" data-luck-type="동물운">
                     <div class="itemTitle">동물운</div>
                     <img class="itemImage" src="../asset/lucky/06.jpg" alt="동물운">
-                    <div class="itemDesc">동물들의 사랑을 한몸에! 유독 동물들이 당신에게 다가옵니다.</div>
-                    <div class="itemBtn">행운 추가하기</div>
+                    <div class="itemDesc">✭동물들의 사랑을 한몸에✭ 유독 동물들이 당신에게 다가갑니다!</div>
+                    <button class="itemBtn add-luck-button">행운 추가하기</button>
                 </div>
+
             </div>
         </div>
     </div>
@@ -60,14 +69,20 @@
     <div class="receipt">
         <div class="title">오늘의 운세🍀</div>
         <div class="listGroup">
-            <div class="list">...</div>
+            <div class="list luck-list">
+            </div>
         </div>
-        <div class="result">행운지수</div>
+        <div class="result-area">
+            <span>행운지수</span>
+            <span class="total-score">0점</span>
         </div>
     </div>
+
 </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/lucky.js"></script>
+
 </body>
 
 </html>
